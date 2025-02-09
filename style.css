@@ -1,0 +1,99 @@
+:root{
+    --Dark-cyan:hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--Cream);
+}
+.container{
+    width: 550px;
+    height: 490px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: var(--White) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 30px -20px var(--Dark-grayish-blue);}
+img{
+    width: 50%;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+}
+.text-content{
+    padding: 30px;
+}
+.name{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+}
+h1{
+    color: var(--Very-dark-blue);
+    margin: 25px 0;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+p{
+    color: var(--Dark-grayish-blue);
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.price{
+    font-size: 35px;
+    color: var(--Dark-cyan);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+.discount{
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Dark-cyan);
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: hsl(159, 36%, 23%);
+}
+.btn img{
+    width: 20px;
+}
+.btn span{
+    color: var(--White);
+}
